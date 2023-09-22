@@ -545,3 +545,57 @@
   545  cat counts.txt 
   546  ls
   547  history > cmds.log
+  548  ls
+  549  cd ..
+  550  ls
+  551  git status
+  552  git commit -m "Worksheet 2 attempt"
+  553  git add Worksheet2/
+  554  git commit -m "Adding Worksheet2"
+  555  git push origin master
+  556  cd cs131/
+  557  ls
+  558  mkdir Worksheet2
+  559  mv Global\ YouTube\ Statistics.csv Worksheet2
+  560  ls
+  561  cd Worksheet2
+  562  ls
+  563  cd ..
+  564  ls
+  565  git status
+  566  ls
+  567  cd Worksheet2
+  568  grep "United States" *
+  569  grep "Music" *
+  570  cd cs131/
+  571  ls
+  572  cd Worksheet2
+  573  ls
+  574  grep "United States" *
+  575  grep "Music" *
+  576  cd cs131/
+  577  ls
+  578  cd Worksheet
+  579  cd Worksheet2
+  580  ls
+  581  regex "[0-9],Music" Global\ YouTube\ Statistics.csv | wc -wl > counts.txt
+  582  "[0-9],Music" Global\ YouTube\ Statistics.csv | wc -wl counts.txt
+  583  grep "[0-9],Music" Global\ YouTube\ Statistics.csv | wc -wl > counts.txt
+  584  ls
+  585  cat cmds.log 
+  586  cat counts.txt 
+  587  vi counts.txt 
+  588  ls
+  589  cd cs131/
+  590  ls
+  591  cd Worksheet
+  592  cd Worksheet2
+  593  ls
+  594  cat counts.txt 
+  595  vim counts.txt 
+  596  cat counts.txt 
+  597  vim counts.txt 
+  598  cat counts.txt 
+  599  ls
+  600  cat cmds.log 
+  601  history > cmds.log
