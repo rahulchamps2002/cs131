@@ -1,0 +1,41 @@
+Task 1:
+Commands used: mkdir Assignment1
+
+Task 2:
+Current Shell: /bin/bash
+Command used: echo $SHELL
+
+Task 3:
+Home Directory: /mnt/scratch/FA23_CS131_Ashish/rahulf23
+Command used: echo $HOME
+
+Task 4:
+My UID: rahulf23
+Groups: 1152
+Command used: echo /etc/passwd
+
+Task 5:
+Command used: mkdir myDir, chmod 577 myDir
+Can I "cd"?: Yes.
+Can I "ls"?: Yes.
+Can I "ls -l"?: Yes.
+Can I make a file?: No.
+
+Task 6:
+Commands used: mkdir myDir2, mkdir myDir3
+
+Task 7:
+Commands used: cd myDir2, touch myFile.txt, mv myFile.txt ../myDir3
+
+Task 8:
+How many Mebibytes?: 71367 mebibytes of memory
+Command used: free -m
+
+Task 9:
+What is the OS version: 8.6 (Ootpa)
+Where in /etc/ is the OS version?: /etc/os-release
+Command used: cat /etc/os-release
+
+Task 10:
+Command used: ls -l /etc/
+Permissions: lrwxrwxrwx (777 or read, write, and execute for all)
