@@ -999,7 +999,7 @@
  1010  ps -p 1
  1011  ps -u
  1012  ps -u rahulf23
- 1013  ps -p 1 -o pid, ppid, cmd
+ 1013  ps aux | grep systemd
 
 	Task 5:
  1014  ps -p 1 -o pid,ppid,cmd,%mem,%cpu
