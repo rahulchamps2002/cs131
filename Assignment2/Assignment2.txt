@@ -50,7 +50,7 @@ I see that the vim process is now gone and that happened because of me quitting 
 Task 5:
 The init process is the first process run during system booting.
 The process ID (PID) of the init process is 1.
-Command Used: ps -p 1 -o pid,ppid,cmd,%mem,%cpu
+Command Used: ps aux | grep systemd
 
 Task 6:
 ps aux lists all the processes owned by a given user that are with a terminal (tty).
