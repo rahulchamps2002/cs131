@@ -7,8 +7,8 @@ As per the Dataset, Top 3 [Month, Year] with the most number of YouTube channels
      1. Number of Channels: 2 Month, Year: Aug, 30
      2. Number of Channels: 2 Month, Year: Mar 18
      3. Number of Channels: 2 Month, Year: Sep 2
-The command I used was awk -F ',' '{print $21, $22}' Global\ YouTube\ Statistics.csv | uniq -c | sort -k1,1nr | head -n3.
-awk -F ',' '{print $21, $22}' is a command used to determine that ',' is a separation between categories and print out the categories 21 and 22.
+The command I used was cut -d ',' -f20,21 Global\ YouTube\ Statistics.csv | uniq -c | sort -k1,1nr | head -n3.
+cut -d ',' -f20,21 is a command used to determine that ',' is a separation between categories and print out the categories 20 and 21.
 uniq -c is a command that counts all the uniq values of the categories we are viewing and counting how many times it appears.
 sort -k1,1nr is a command used to sort the uniq -c values so that the largest numbers are on top and the smallest are on the bottom.
 head -n3 is a command that returns the first three items of the sorted list.
@@ -54,3 +54,6 @@ Command Used: ps aux | grep systemd
 
 Task 6:
 ps aux lists all the processes owned by a given user that are with a terminal (tty).
+-a: view processes not associated with the terminal
+-u: orient based on user format
+-x: view processes owned by you
