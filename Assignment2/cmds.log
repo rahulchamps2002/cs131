@@ -961,7 +961,7 @@
   978  awk -F ',' '{print $21,$22}' Global\ YouTube\ Statistics.csv | uniq -c | sort -k1,1nr | head -n3
 
 	Task 2:
-  979  awk -F ',' '{print $21,$22}' Global\ YouTube\ Statistics.csv | uniq -c | sort -k1,1nr | head -n3 >> Assignment2.txt 
+  979  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | sort -k1,1 | uniq -c | sort -k1,1nr | head -n3 
   980  vi Assignment2.txt 
   981  man ps
 
