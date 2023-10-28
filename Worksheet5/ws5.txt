@@ -1,4 +1,4 @@
-27 Comedy.txt
-112 Entertainment.txt
+22 Comedy.txt
+65 Entertainment.txt
 26 Gaming.txt
-83 Music.txt
+72 Music.txt
