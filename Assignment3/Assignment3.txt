@@ -1,0 +1,106 @@
+	Task 1:
+Part 1:
+Commands used: wc -l last.fake
+Output of Command: 2162 last.fake
+
+Part 2:
+Commands I used: grep "f23" last.fake >> lastf23.fake
+Output of command: File lastf23.fake was created with all the lines that contain f23 in it
+
+Part 3:
+Command I used: awk '!/f23/' last.fake
+Output of command: 1923
+
+	Task 2:
+Commands I used:
+grep "Sun" lastf23.fake >> sun.txt
+echo "BEGIN" >> sun\ out.txt
+echo "The list of people who worked on Sunday are:" >> sun\ out.txt
+awk '{print $1}' sun.txt | uniq -u >> sun\ out.txt
+echo "Kudos to these people for putting in the work" >> sun\ out.txt
+echo "END" >> sun\ out.txt
+awk '/BEGIN/,/END/' sun\ out.txt
+
+output of commands:
+BEGIN
+The list of people who worked on Sunday are:
+jewonf23
+saniaf23
+Kudos to these people for putting in the work
+END
+
+	Task 3:
+Commands I used:
+echo "Night Owls list" >> night.txt
+awk '($7 >= "23:00" && $9 <= "04:00") {print $1}' lastf23.fake | sort | uniq -u >> night.txt  
+echo "Night Owls are dope. Please ensure you get enough sleep though." >> night.txt
+
+Output of commands:
+Night Owls list:
+anasf23
+divijf23
+maximf23
+saniaf23
+tienf23
+Night Owls are dope. Please ensure you get enough sleep though.
+
+	Task 4:
+Commands I used:
+echo "Early Birds list" >> night.txt
+awk '($7 >= "23:00" && $9 <= "04:00") {print $1}' lastf23.fake | sort | uniq -u >> night.txt
+echo "Early Birds are dope. Please ensure you get enough sleep though." >> night.txt
+
+Output of commands:
+Early Birds list:
+aaronf23
+anasf23
+divijf23
+hof23
+jewonf23
+maximf23
+rikkif23
+saniaf23
+Early Birds are dope. Please ensure you get enough sleep though.
+
+	Task 5:
+Commands I used:
+awk '/^t/ {print $1}' lastf23.fake | sort | uniq >> Assignment3.txt
+
+Output of commands:
+thif23
+tienf23
+
+	Task 6:
+Commands I used:
+awk -F: '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq >> Assignment3.txt
+
+Output of commands:
+ajay23fa
+alan23fa
+amreenf23
+angie23fa
+apple23fa
+areebah23fa
+
+	Task 7:
+Commands I used:
+sed 's/[a-zA-Z0-9]//g' passwd.fake |sort -u >> Assignment3.txt
+
+Output of commands:
+-::::    :/://
+-::::  - :/://
+-::::  :/://
+-:::: :/://
+-:::::///-://
+::::    :///://
+::::    ://://
+::::   :///://
+::::  ://://
+::::  :/://
+:::: ://://
+::::- :///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
